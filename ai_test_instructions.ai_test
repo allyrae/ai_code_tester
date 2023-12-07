@@ -1,0 +1,27 @@
+# AI Test Instructions
+
+## Test Objective:
+Evaluate the provided code for correctness and adherence to specified behavior.
+
+
+## Output Format:
+The output from ChatGPT should follow this standardized format:
+
+```json
+{
+  "result": "Pass",   // Pass or Fail
+  "details": "Detailed information about the test results."  // Optional
+}
+
+## Test Steps:
+   **Sanity Check:**
+   Perform a general sanity check on the code to ensure it is syntactically correct.
+
+   **Meets Specified Behavior:**
+   Check that the code meets the specified behavior.
+
+   **Function Testing:**
+   For each function in the code, provide input/output examples and expected behavior. Please include corner cases and potential edge scenarios.
+
+   **Detailed Response:**
+   Provide more detailed feedback for each function, including line-by-line analysis and any identified issues.
