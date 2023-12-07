@@ -15,23 +15,24 @@ Before using the AI Code Tester, ensure you have the following prerequisites ins
 ## Installation
 Clone the repository into the root of your project:
 
-`git clone https://github.com/your-username/your-repo.git
+`git clone https://github.com/allyrae/ai_code_tester.git`
 
 ## Install dependencies:
-`pip install openai
+`pip install openai`
 
 Configure the AI Code Tester with the configuration file named ai_tester.cfg:
 
-`[ai_tester_config]
-`openai_api_key = YOUR_OPENAI_API_KEY
-`valid_extensions = py, js  # Add valid file extensions separated by commas
-`max_tokens = 100  # Set the maximum number of tokens for GPT-3 output
-`engine = text-davinci-002  # Specify the GPT-3 engine to use
+```[ai_tester_config]
+openai_api_key = YOUR_OPENAI_API_KEY
+valid_extensions = py, js  # Add valid file extensions separated by commas
+max_tokens = 100  # Set the maximum number of tokens for GPT-3 output
+engine = text-davinci-002  # Specify the GPT-3 engine to use
+```
 
 ## Usage
 Run the AI Code Tester script by executing the following command:
 
-`python AI_Tester.py [-detailed] [path]
+`python AI_Tester.py [-detailed] [path]`
 
 Use the -detailed flag to enable detailed output.
 Optionally, specify a path or file for testing (default: current directory).
@@ -40,13 +41,13 @@ Optionally, specify a path or file for testing (default: current directory).
 The general test prompt is ai_test_instructions.ai_test. The content of this file should include the instructions for the GPT-3 model.
 
 ## Test Files
-For each code file in your project, include a matching *.ai_test file, with specific test instructions for that file.
+For each file in your project, include a matching *.ai_test file, with specific test instructions for that file.
 
 ## Output
 The script will display the results of the tests, indicating whether each test passed or failed. Detailed output includes the GPT-3-generated response.
 
 ## Example
-`python AI_Tester.py -detailed /path/to/file
+`python AI_Tester.py -detailed /path/to/file`
 
 ## Notes
 Ensure your OpenAI API key is kept confidential and not shared publicly.
